@@ -247,3 +247,74 @@ footer { background: rgba(0,0,0,0.6); padding: 40px 10%; margin-top: auto; backd
  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 600ms ease, transform 600ms ease; }
  .reveal.visible { opacity: 1; transform: translateY(0); }
  
+
+ /*------------team.login------------*/
+
+.features.grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Card sizing */
+.team-card {
+  width: 250px;             
+  min-height: 340px;         
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover effect */
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+  word-break: break-word; 
+}
+
+/* Team image styling */
+.team-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #7ef9ff;
+  flex-shrink: 0;
+}
+
+
+/* Social links */
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #7ef9ff;
+  margin: 0 8px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00d4ff;
+}
+
+/*-----------------------------------------*/
