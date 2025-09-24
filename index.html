@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackipedia • Learning Paths</title>
+  <link rel="stylesheet" href="landing.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="logo">Stackipedia</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#getstarted">Get Started</a>
+        <a href="#footer_section" class="cta-link">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Learn smarter • Build faster</p>
+      <h1>Discover tech stacks with Stackipedia</h1>
+      <p class="subcopy">Explore curated learning paths for Web Development, AI/ML, Blockchain, and more, all in one platform designed like a shopping experience for learning.</p>
+      <div class="hero-cta">
+        <a href="#getstarted" class="btn">Get Started</a>
+        <a href="#features" class="btn btn-ghost">Explore Features</a>
+      </div>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+  </section>
+
+  <section id="about" class="section about reveal">
+    <h2>About Stackipedia</h2>
+    <p>Stackipedia is a learning platform designed like an online shopping site, but instead of products, it offers technology learning paths. Each “stack” includes a description, difficulty level, career opportunities, and a clear roadmap to master the technology. Learners can explore stacks, add them to a personal wishlist, access curated resources, and track their progress—making learning structured, interactive, and fun.</p>
+  </section>
+
+  <section id="features" class="section features reveal">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card reveal">
+        <h3>Explore Stacks</h3>
+        <p>Browse technology stacks like Web Development, AI/ML, and Blockchain, each with detailed learning paths and career insights.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Wishlist & Track</h3>
+        <p>Add learning paths to your personal wishlist and track your progress to stay organized and motivated.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Curated Resources</h3>
+        <p>Access handpicked tutorials, GitHub repositories, blogs, and peer-reviewed materials for each stack.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Peer Ratings & Reviews</h3>
+        <p>See ratings and reviews from other learners to decide which stacks are right for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="getstarted" class="section cta reveal">
+    <h2>Get Started</h2>
+    <p>Sign up, explore stacks, create your wishlist, and start learning today. Stackipedia makes mastering technology as simple as shopping online.</p>
+    <a href="login.html" class="btn">Get Started</a>
+  </section>
+  </main>
+
+  <footer id="footer_section">
+    <div class="footer-inner">
+      <div class="brand">
+        <div class="logo">Stackipedia</div>
+        <p class="footnote">© <span id="year"></span> Stackipedia. All rights reserved.</p>
+        <p class="footnote">Made with ❤️ by Team Void</p>
+        <a  href="team.html" class="btn footer-team-btn">Team</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="landing.js"></script>
+  <script>
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
