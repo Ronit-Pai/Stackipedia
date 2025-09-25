@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackipedia • Login / Sign Up</title>
+  <link rel="stylesheet" href="../styles/landing.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="logo">Stackipedia</div>
+      <a href="./index.html" class="btn btn-ghost">Back</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:140px;">
+      <h2>Welcome back</h2>
+      <p>Login or create your account to start building your learning wishlist.</p>
+      <div style="max-width:420px;margin:22px auto 0;text-align:left;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:22px;backdrop-filter:blur(8px);">
+        <label style="display:block;font-weight:600;margin-bottom:6px;">Email</label>
+        <input id="login-email" type="email" placeholder="you@example.com" style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);background:rgba(0,0,0,0.4);color:#fff;margin-bottom:12px;">
+        <label style="display:block;font-weight:600;margin-bottom:6px;">Password</label>
+        <input id="login-password" type="password" placeholder="••••••••" style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.14);background:rgba(0,0,0,0.4);color:#fff;margin-bottom:16px;">
+        <button id="login-btn" class="btn" style="width:100%">Continue</button>
+        <p id="login-message" style="margin-top:10px;color:#cfd9da;text-align:center;"></p>
+        <p style="margin-top:10px;color:#cfd9da;text-align:center;">No account? <a href="./signup.html" style="color:#7ef9ff;">Sign up</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="brand">
+        <div class="logo">Stackipedia</div>
+        <p class="footnote">© <span id="year"></span> Stackipedia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script>
+    window.SUPABASE_URL = window.SUPABASE_URL || localStorage.getItem('SUPABASE_URL') || 'https://kyxjygwlrwbqunamxzfr.supabase.co';
+    window.SUPABASE_ANON_KEY = window.SUPABASE_ANON_KEY || localStorage.getItem('SUPABASE_ANON_KEY') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt5eGp5Z3dscndicXVuYW14emZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3OTUwNjgsImV4cCI6MjA3NDM3MTA2OH0.TLIdP6lmaFBAk7-NmHxlSP3OfSX_2ucbG0h8EY8WjX4';
+  </script>
+  <script src="../scripts/login.js"></script>
+</body>
+</html>
+
+

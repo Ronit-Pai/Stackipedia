@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackipedia • Explore Stacks</title>
+  <link rel="stylesheet" href="../styles/landing.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700&family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="logo">Stackipedia</div>
+      <nav class="primary-nav">
+        <a href="#" id="logout-btn" class="btn btn-ghost">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height: 40vh; padding-top: 120px;">
+      <div class="hero-inner">
+        <p class="eyebrow">Curated learning paths</p>
+        <h1>Pick your next stack</h1>
+        <p class="subcopy">Browse technology stacks with difficulty, career roles, and a bite-sized roadmap to begin.</p>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="orb orb-a" aria-hidden="true"></div>
+      <div class="orb orb-b" aria-hidden="true"></div>
+    </section>
+
+    <section class="section features" id="stacks">
+      <h2>Stacks</h2>
+      <div class="grid" id="stack-grid">
+        <!-- Cards injected by app.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="brand">
+        <div class="logo">Stackipedia</div>
+        <p class="footnote">© <span id="year"></span> Stackipedia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script>
+    window.SUPABASE_URL = window.SUPABASE_URL || localStorage.getItem('SUPABASE_URL') || 'https://kyxjygwlrwbqunamxzfr.supabase.co';
+    window.SUPABASE_ANON_KEY = window.SUPABASE_ANON_KEY || localStorage.getItem('SUPABASE_ANON_KEY') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt5eGp5Z3dscndicXVuYW14emZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg3OTUwNjgsImV4cCI6MjA3NDM3MTA2OH0.TLIdP6lmaFBAk7-NmHxlSP3OfSX_2ucbG0h8EY8WjX4';
+  </script>
+  <script src="../scripts/app.js"></script>
+</body>
+</html>
+
+
