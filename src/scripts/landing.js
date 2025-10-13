@@ -44,7 +44,7 @@ if (toggle && nav) {
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Scroll reveal animations
+
 const revealEls = document.querySelectorAll('.reveal');
 if (revealEls.length) {
   const io = new IntersectionObserver((entries) => {
@@ -58,21 +58,21 @@ if (revealEls.length) {
   revealEls.forEach((el) => io.observe(el));
 }
 
-// Subtle mouse parallax for orbs
+
 const orbs = document.querySelectorAll('.orb');
 if (orbs.length) {
   window.addEventListener('mousemove', (e) => {
     const { innerWidth, innerHeight } = window;
-    const x = (e.clientX / innerWidth - 0.5) * 2; // -1..1
+    const x = (e.clientX / innerWidth - 0.5) * 2; 
     const y = (e.clientY / innerHeight - 0.5) * 2;
     orbs.forEach((orb, idx) => {
-      const depth = (idx + 1) * 6; // different strength
+      const depth = (idx + 1) * 6; 
       orb.style.transform = `translate3d(${x * depth}px, ${y * depth}px, 0)`;
     });
   });
 }
 
-// Card tilt interaction
+
 const tiltCards = document.querySelectorAll('.features .card');
 tiltCards.forEach((card) => {
   const dampen = 12;
@@ -80,8 +80,8 @@ tiltCards.forEach((card) => {
     const rect = card.getBoundingClientRect();
     const cx = e.clientX - rect.left;
     const cy = e.clientY - rect.top;
-    const rx = ((cy / rect.height) - 0.5) * -dampen; // rotateX
-    const ry = ((cx / rect.width) - 0.5) * dampen;  // rotateY
+    const rx = ((cy / rect.height) - 0.5) * -dampen; 
+    const ry = ((cx / rect.width) - 0.5) * dampen;  
     card.style.transform = `perspective(600px) rotateX(${rx}deg) rotateY(${ry}deg)`;
   });
   card.addEventListener('mouseleave', () => {

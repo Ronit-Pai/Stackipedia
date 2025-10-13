@@ -1,5 +1,4 @@
-// Basic Supabase email/password signup
-// Configure these with your own project values
+
 const SUPABASE_URL = window.SUPABASE_URL || localStorage.getItem('SUPABASE_URL') || '';
 const SUPABASE_ANON_KEY = window.SUPABASE_ANON_KEY || localStorage.getItem('SUPABASE_ANON_KEY') || '';
 
@@ -62,11 +61,10 @@ if (form) {
 
       setMessage('Check your email for a confirmation link. Then log in.', 'success');
       form.reset();
-      // Optional: if email confirmations are disabled in project, redirect directly
-      // window.location.href = './app.html';
+      
     } catch (err) {
       setMessage('Unexpected error. Please try again.', 'error');
-      // Optionally log err
+    
     }
   });
 }

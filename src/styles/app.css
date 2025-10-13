@@ -1,4 +1,4 @@
-/* Reset & global styles */
+
 * {
    margin: 0;
    padding: 0;
@@ -15,7 +15,7 @@
     line-height: 1.6;
   }
  
- /* Dark overlay to increase contrast over image */
+ 
  body::before {
     content: "";
     position: fixed;
@@ -26,7 +26,7 @@
   }
 
 main {
-  flex: 1; /* keeps footer at bottom */
+  flex: 1; /
 }
 
 a {
@@ -247,7 +247,7 @@ footer .socials a:hover { color: #ffffff; }
  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 600ms ease, transform 600ms ease; }
  .reveal.visible { opacity: 1; transform: translateY(0); }
  
-/*------------team.login------------*/
+/*---team.login--*/
 
 .features.grid {
  display: flex;
@@ -316,7 +316,6 @@ footer .socials a:hover { color: #ffffff; }
  color: #00d4ff;
 }
 
-/*-----------------------------------------*/
 
 
 
