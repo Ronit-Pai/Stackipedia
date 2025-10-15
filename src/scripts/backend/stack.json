@@ -1,0 +1,29 @@
+[
+  {
+    "id": "web-dev",
+    "name": "Web Development",
+    "logo": "🌐",
+    "description": "Frontend + backend foundations with modern frameworks.",
+    "difficulty": "Beginner → Intermediate",
+    "careers": ["Frontend Developer", "Full-Stack Developer"],
+    "roadmap": ["HTML/CSS/JS", "React", "Node.js + Express", "DB + Auth"]
+  },
+  {
+    "id": "ai-ml",
+    "name": "AI / ML",
+    "logo": "🤖",
+    "description": "From Python basics to training ML models and deploying.",
+    "difficulty": "Intermediate",
+    "careers": ["ML Engineer", "Data Scientist"],
+    "roadmap": ["Python + NumPy", "Pandas", "Scikit-learn", "NNs + Deployment"]
+  },
+  {
+    "id": "blockchain",
+    "name": "Blockchain",
+    "logo": "⛓️",
+    "description": "Smart contracts, dApps, and Web3 fundamentals.",
+    "difficulty": "Intermediate",
+    "careers": ["Smart Contract Dev", "Web3 Developer"],
+    "roadmap": ["Solidity", "Hardhat", "Ethers.js", "Security + Audits"]
+  }
+]
